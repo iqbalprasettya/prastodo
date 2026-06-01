@@ -1,0 +1,3 @@
+prastodo.iqbalprasettya.web.id {
+  reverse_proxy prasttodo:80
+}
