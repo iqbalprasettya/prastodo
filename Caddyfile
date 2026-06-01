@@ -5,3 +5,14 @@ prastodo.iqbalprasettya.web.id {
 openclaw.iqbalprasettya.web.id {
   reverse_proxy 127.0.0.1:18789
 }
+
+monitor.iqbalprasettya.web.id {
+  request_body {
+    max_size 10MB
+  }
+  reverse_proxy 127.0.0.1:8090 {
+    transport http {
+      read_timeout 360s
+    }
+  }
+}
