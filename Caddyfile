@@ -16,3 +16,7 @@ monitor.iqbalprasettya.web.id {
     }
   }
 }
+
+router.iqbalprasettya.web.id {
+  reverse_proxy 127.0.0.1:20128
+}
